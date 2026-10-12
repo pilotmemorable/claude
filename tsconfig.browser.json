@@ -1,0 +1,9 @@
+{
+  // Browser code: the feedback widget. Uses DOM types only.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": []
+  },
+  "include": ["src/feedback/widget.ts", "src/feedback/types.ts", "test/widget.test.ts", "test/validate.test.ts"]
+}

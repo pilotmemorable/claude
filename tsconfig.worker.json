@@ -1,0 +1,9 @@
+{
+  // Cloudflare Worker code. Uses Workers runtime types, no DOM.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["src/worker", "src/feedback/store.ts", "src/feedback/types.ts", "test/worker.test.ts"]
+}
